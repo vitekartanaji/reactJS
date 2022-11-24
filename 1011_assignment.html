@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+</head>
+<body>
+    
+    <div id = "root"></div>
+    <h2>Personal Details</h2>
+
+    <ul>
+        <li>Name:</li>
+        <li>Qualification:</li>
+        <li>Native Place:</li>
+    </ul>
+
+    <button id = "myButton" >Click</button>
+
+    <script>
+        const var1 = document.getElementById("myButton");
+        var1.addEventListener("click",detailsFunction);
+        
+        function detailsFunction(){
+            let var2 = document.getElementsByTagName("li");
+            var2[0].innerHTML="Tanaji Vitekar";
+            var2[1].innerHTML="Bcs";
+            var2[2].innerHTML="Sangola";
+            ReactDOM.render(var2,document.getElementById("root"));
+        }
+
+    </script>
+
+</body>
+</html>
