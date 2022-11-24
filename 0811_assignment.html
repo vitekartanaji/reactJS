@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React Assignment</title>
+</head>
+<body>
+    <h3>Hello</h3>
+
+    <button id="myButton">Click</button>
+    <p id="text"></p>
+
+    <div>Hi</div>
+
+    <script>
+
+        const name1 = document.getElementById("myButton");
+
+        name1.addEventListener("click",myFunction1);
+
+        function myFunction1(){
+            var name2 = document.getElementById("text");
+            name2.innerHTML = "Tanaji Vitekar";
+        }
+
+        //-----------------------------
+
+        name1.addEventListener("dblclick",myFunction2);
+
+        function myFunction2(){
+            document.querySelectorAll("div")[0].style.fontSize = "40px";
+        }
+
+    </script>
+</body>
+</html>
