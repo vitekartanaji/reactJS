@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React-JS</title>
+</head>
+<body>
+
+    <h3>Introduction to React-JS</h3>
+
+    <button id="myButton">Click Here.</button>
+    <p id="demo"></p>
+
+    <script>
+        alert("hello")                         // to display/add alert on page
+        document.querySelector("h3").style.color = "red";          // query selector
+
+        const myBtn = document.getElementById("myButton");            // id selector
+        myBtn.addEventListener("click",myFunction);               // event listener
+        myBtn.style.color = "green";
+
+        function myFunction(){
+
+            var newVar = document.getElementById("demo");
+            newVar.innerHTML = "Welcome to Pune.";
+            newVar.style.backgroundColor = "yellow";
+            newVar.style.color = "blue";
+
+        }
+
+    </script>
+</body>
+</html>
