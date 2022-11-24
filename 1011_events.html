@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events of Javascript</title>
+</head>
+<body>
+    <form name="firstForm" action="javascript:void" onsubmit="validateForm()" method="post">
+
+        Name:<input type="text" id="name1" class="name1" onfocus="focusFunction()" onblur="blurFunction()">
+        <input type="submit" value="Submit">
+
+        <script>
+
+            function validateForm(){
+                let var1 = document.forms["firstForm"]["name1"].value;
+                if (var1 == "") {
+                    alert("Please enter your name.");
+                    return false;
+                }
+            }
+
+            function focusFunction(){      //inFocus
+                document.getElementById("name1").style.backgroundColor = "red";
+            }
+
+            function blurFunction(){       //outFocus
+                document.getElementById("name1").style.backgroundColor = "yellow";
+            }
+
+        </script>
+    </form>
+</body>
+</html>
